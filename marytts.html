@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="ja">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="ja">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="ja">
+<!--<![endif]-->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width" />
+<meta name="description"  content="英語テキスト朗読ツールMaryTTS・オンライン" />
+<meta name="keywords" content="英語テキスト,朗読,ツール">
+<title>英語テキスト朗読ツールMaryTTS・オンライン | ぴよ猫チャンネル</title>
+<link rel="icon" href="http://piyonekochannel.com/wp-content/uploads/sites/3/2019/12/cat_icon.png" sizes="32x32" />
+<link rel='stylesheet' id='dashicons-css'  href='http://piyonekochannel.com/wp-includes/css/dashicons.min.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='admin-bar-css'  href='http://piyonekochannel.com/wp-includes/css/admin-bar.min.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='simplicity-style-css'  href='http://piyonekochannel.com/wp-content/themes/simplicity2/style.css?ver=5.2.5&#038;fver=20191022024014' type='text/css' media='all' />
+<link rel='stylesheet' id='responsive-style-css'  href='http://piyonekochannel.com/wp-content/themes/simplicity2/css/responsive-pc.css?ver=5.2.5&#038;fver=20190926015800' type='text/css' media='all' />
+<link rel='stylesheet' id='skin-style-css'  href='http://piyonekochannel.com/wp-content/themes/simplicity2/skins/simple-black/style.css?ver=5.2.5&#038;fver=20190926015800' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-style-css'  href='http://piyonekochannel.com/wp-content/themes/simplicity2/webfonts/css/font-awesome.min.css?ver=5.2.5&#038;fver=20190926015800' type='text/css' media='all' />
+<link rel='stylesheet' id='icomoon-style-css'  href='http://piyonekochannel.com/wp-content/themes/simplicity2/webfonts/icomoon/style.css?ver=5.2.5&#038;fver=20190926015800' type='text/css' media='all' />
+<link rel='stylesheet' id='extension-style-css'  href='http://piyonekochannel.com/wp-content/themes/simplicity2/css/extension.css?ver=5.2.5&#038;fver=20190926015800' type='text/css' media='all' />
+<style id='extension-style-inline-css' type='text/css'>@media screen and (max-width:639px){.article br{display:block}}</style>
+<link rel='stylesheet' id='print-style-css'  href='http://piyonekochannel.com/wp-content/themes/simplicity2/css/print.css?ver=5.2.5&#038;fver=20190926015800' type='text/css' media='print' />
+<link rel='stylesheet' id='sns-twitter-type-style-css'  href='http://piyonekochannel.com/wp-content/themes/simplicity2/css/sns-twitter-type.css?ver=5.2.5&#038;fver=20190926015800' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='http://piyonekochannel.com/wp-includes/css/dist/block-library/style.min.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='addtoany-css'  href='http://piyonekochannel.com/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.15&#038;fver=20180912110604' type='text/css' media='all' />
+<style type="text/css">
+<!--
+.cp_iptxt {
+  position: relative;
+  width: 80%;
+  margin: 40px 3%;
+}
+.cp_iptxt input[type='text'] {
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.3em;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  color: #000000;
+  border: 1px solid #1b2538;
+  border-radius: 4px;
+}
+.ef input[type='text']:focus {
+  border: 1px solid #da3c41;
+  outline: none;
+  box-shadow: 0 0 5px 1px rgba(218,60,65, .5);
+}
+.btn-gradient-3d-orange {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #c58668;
+}
+
+.btn-gradient-3d-orange:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+
+select {
+
+  /* styling */
+  background-color: white;
+  border: thin solid blue;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+select.round {
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    radial-gradient(#ddd 70%, transparent 72%);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - .5em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
+}
+
+select.round:focus {
+  background-image:
+    linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    radial-gradient(gray 70%, transparent 72%);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - .5em) .5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1.5em 1.5em;
+  background-repeat: no-repeat;
+  border-color: green;
+  outline: 0;
+}
+
+#loading{
+  position:absolute;
+  left:50%;
+  top:0%;
+  margin-left:-30px;
+  margin-top:330px;
+  display:none;
+}
+#loading_text{
+  position:absolute;
+  left:50%;
+  top:0%;
+  margin-left:-140px;
+  margin-top:400px;
+  display:none;
+}
+-->
+</style>
+<link rel="stylesheet" type="text/css" href="css/dropify.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="js/dropify.js"></script>
+<script type='text/javascript' src='http://piyonekochannel.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='http://piyonekochannel.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://piyonekochannel.com/wp-content/plugins/add-to-any/addtoany.min.js?ver=1.1&#038;fver=20180912110604'></script>
+<script>
+var bLock = false;
+
+function convClick(){
+  if(bLock){
+    window.alert("ただいま処理中です。");
+    return;
+  }
+  
+  var text = document.getElementById("text");
+  if (text.value.length <= 0) {
+    window.alert("テキストが入力されていません。");
+    return;
+  }
+  if (text.value.length > 4000) {
+    window.alert("入力文字数を4,000文字以内にして下さい。");
+    return;
+  }
+  if (text.value.indexOf("\"") >= 0) {
+    window.alert("\"は入力出来ません。");
+    return;
+  }
+
+  $("#loading").css('display','inline');
+  $("#loading_text").css('display','inline');
+
+  setTimeout(function(){conv()}, 0);
+}
+
+
+function conv(){
+  bLock = true;
+  var text = document.getElementById("text");
+  var ainame = document.getElementById("ainame");
+  var save_enable = document.getElementById("save_enable");
+  
+  newFileName = "speach_" + Date.now() +".wav";
+
+  var formData = new FormData();
+  formData.append("target", encodeURI(text.value));
+  formData.append("ainame", ainame.value);
+
+  var xhr = new XMLHttpRequest();
+  xhr.onload = function (e) {
+    if (xhr.readyState === 4) {
+      if (xhr.status === 200) {
+        var blob = xhr.response;
+        if (window.navigator.msSaveBlob) {
+          window.navigator.msSaveBlob(blob, newFileName);
+        }else {
+          if(save_enable.checked){
+            var objectURL = window.URL.createObjectURL(blob);
+            var link = document.createElement("a");
+            document.body.appendChild(link);
+            link.href = objectURL;
+            link.download = newFileName;
+            link.click();
+            document.body.removeChild(link);
+          }
+        }
+        // 音声自動再生
+        var audio = document.getElementById("audio");
+        audio.src = URL.createObjectURL(blob);
+        audio.play();
+      } else if (xhr.status === 400) {
+        window.alert("テキスト朗読が出来ませんでした。");
+      } else {
+        window.alert("テキスト朗読に失敗しました。エラー=" + xhr.statusText);
+      }
+    } else {
+      window.alert("テキスト朗読に失敗しました。エラー=" + xhr.statusText);
+    }
+    $("#loading").fadeOut();
+    $("#loading_text").fadeOut();
+    bLock = false;
+  };
+  xhr.overrideMimeType('text/plain; charset=UTF-8');
+  xhr.open("POST", "piyo-online-tool/marytts.php", true);
+  xhr.responseType = "blob";
+  xhr.send(formData);
+}
+</script>
+<script data-ad-client="ca-pub-5692354978691508" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+  <body class="home page-template-default page page-id-425" itemscope itemtype="https://schema.org/WebPage">
+<h1 class="entry-title">英語テキスト朗読ツールMaryTTS・オンライン</h1>
+<article class="article">
+<h2>英語テキスト朗読ツールMaryTTS・オンライン</h2>
+※ サポート環境：Google Crome
+<!--- ツール -->
+<div class="cp_iptxt">
+  <label class="ef">
+    <textarea id="text" style="width:650px" cols="50" rows="8" maxlength="4000" placeholder="ここにAIに朗読させたい英語のテキストを入力して下さい。（最大4,000文字）"></textarea>
+  </label>
+  <p style="text-align:left; width:650px;"><select id="ainame" class="round">
+  <option value="cmu-slt-hsmm" selected>女性(cmu-slt-hsmm)</option>
+  <option value="cmu-rms-hsmm">男性１(cmu-rms-hsmm)</option>
+  <option value="cmu-bdl-hsmm">男性２(cmu-bdl-hsmm)</option>
+  </select>　
+  <a href="#" class="btn-gradient-3d-orange" onclick="convClick();">　朗読開始　</a>　
+  <input type="checkbox" id="save_enable"><label for="save_enable">ファイルを保存する</label>
+  </p>
+  <p><audio id="audio" style="width:650px;" controls></audio></p>
+</div>
+<div id="loading"><img src="img/loading.gif"></div>
+<div id="loading_text"><img src="img/loading_text02.png"></div>
+
+<!--- ツール ここまで -->
+  </body>
+</html>
